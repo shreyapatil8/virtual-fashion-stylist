@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Virtual Fashion Stylist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>👗 Welcome, {{ username }}!</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form method="post">
+            <label>Gender:</label>
+            <select name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br>
+
+            <label>Occasion:</label>
+            <select name="occasion">
+                {% for occ in occasions %}
+                    <option value="{{ occ }}">{{ occ }}</option>
+                {% endfor %}
+            </select><br>
+
+            <label>Preferred Color:</label>
+            <input type="text" name="color" placeholder="Red, Blue, Black"><br>
+
+            <button type="submit">Show Recommendations</button>
+        </form>
+
+        {% if recommendations %}
+            <h2>Outfit Recommendations:</h2>
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Color</th>
+                    <th>Occasion</th>
+                </tr>
+                {% for item in recommendations %}
+                    <tr>
+                        <td>{{ item.outfit_name }}</td>
+                        <td>{{ item.type }}</td>
+                        <td>{{ item.color }}</td>
+                        <td>{{ item.occasion }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+
+        <br>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+outfit_id,outfit_name,type,color,occasion,gender
+1,Red Shirt,Top,Red,Casual,Male
+2,Blue Jeans,Bottom,Blue,Casual,Male
+3,Black Blazer,Top,Black,Formal,Male
+4,White Kurta,Top,White,Traditional,Male
+5,Grey Trousers,Bottom,Grey,Formal,Male
+6,Green T-Shirt,Top,Green,Casual,Male
+7,Maroon Sherwani,Top,Maroon,Traditional,Male
+8,Yellow Hoodie,Top,Yellow,Casual,Male
+9,Beige Chinos,Bottom,Beige,Casual,Male
+10,Blue Formal Shirt,Top,Blue,Formal,Male
+11,Black Dress,One-piece,Black,Party,Female
+12,Red Saree,Traditional,Red,Party,Female
+13,White Top,Top,White,Casual,Female
+14,Blue Skirt,Bottom,Blue,Casual,Female
+15,Golden Gown,One-piece,Gold,Party,Female
+16,Pink Kurti,Top,Pink,Traditional,Female
+17,Black Jeans,Bottom,Black,Casual,Female
+18,Grey Blazer,Top,Grey,Formal,Female
+19,Peach Dress,One-piece,Peach,Party,Female
+20,Green Lehenga,Traditional,Green,Party,Female
+21,Yellow Crop Top,Top,Yellow,Casual,Female
+22,White Palazzo,Bottom,White,Casual,Female
+23,Blue Saree,Traditional,Blue,Party,Female
+24,Black Formal Shirt,Top,Black,Formal,Male
+25,White Formal Shirt,Top,White,Formal,Male
+26,Navy Blue Suit,Top,Navy,Formal,Male
+27,Olive Green Jacket,Top,Olive,Casual,Male
+28,Light Pink Shirt,Top,Pink,Casual,Male
+29,Brown Blazer,Top,Brown,Formal,Male
+30,Red Lehenga,Traditional,Red,Party,Female
+31,Silver Gown,One-piece,Silver,Party,Female
+32,Orange Top,Top,Orange,Casual,Female
+33,Violet Skirt,Bottom,Violet,Casual,Female
+34,Black Saree,Traditional,Black,Party,Female
+35,White Dress,One-piece,White,Party,Female
+36,Blue Kurta,Top,Blue,Traditional,Male
+37,Brown Trousers,Bottom,Brown,Formal,Male
+38,Black Jeans,Bottom,Black,Casual,Male
+39,Grey Hoodie,Top,Grey,Casual,Male
+40,Green Kurta,Top,Green,Traditional,Male
