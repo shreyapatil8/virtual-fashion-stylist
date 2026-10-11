@@ -1,52 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sign Up - Virtual Fashion Stylist</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>🛍️ Sign Up</h1>
-        {% with messages = get_flashed_messages(with_categories=true) %}
-            {% if messages %}
-                {% for category, message in messages %}
-                    <div class="flash {{ category }}">{{ message }}</div>
-                {% endfor %}
-            {% endif %}
-        {% endwith %}
-        <form method="post">
-            <input type="text" name="username" placeholder="Username" required><br>
-            <input type="password" name="password" placeholder="Password" required><br>
-            <select name="gender" required>
-                <option value="">Select Gender</option>
-                <option>Female</option>
-                <option>Male</option>
-            </select><br>
-            <select name="style" required>
-                <option value="">Style Preference</option>
-                <option>Casual</option>
-                <option>Party</option>
-                <option>Formal</option>
-                <option>Traditional</option>
-            </select><br>
-            <select name="body_type" required>
-                <option value="">Body Type</option>
-                <option>Slim</option>
-                <option>Athletic</option>
-                <option>Curvy</option>
-                <option>Plus-size</option>
-            </select><br>
-            <select name="skin_tone" required>
-                <option value="">Skin Tone</option>
-                <option>Fair</option>
-                <option>Medium</option>
-                <option>Dusky</option>
-                <option>Deep</option>
-            </select><br>
-            <button type="submit">Sign Up</button>
-        </form>
-        <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
-    </div>
+  <div class="container app-card">
+    <h2>Create Account</h2>
+    <form method="POST" action="{{ url_for('signup') }}">
+      <label>Username</label>
+      <input type="text" name="username" required class="form-control">
+      
+      <label>Password</label>
+      <input type="password" name="password" required class="form-control">
+      
+      <button type="submit" class="btn btn-primary mt-3">Sign Up</button>
+      <p class="mt-2">Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+    </form>
+  </div>
 </body>
 </html>
